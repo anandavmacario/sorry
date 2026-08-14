@@ -18,87 +18,88 @@
     <datalist> = Lista de sugestões para <input>
     -->
 
-    <h1>Formulário Completo</h1>
-    
+    <h1>Dev Connect</h1>
+    <p>Cadastre-se para participar de projetos e oportunidades na área de desenvolvimento de sistemas.</p>
     <form action="/enviar-dados" method="post">
         <fieldset>
         <legend>Informações Pessoais</legend>
         
-        <label for="nome">Nome Completo:</label><br>
-        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br>
-
-        <label for="email">E-mail</label><br>
-        <input type="email" name="email" id="email" placeholder="seuemail@euamosenai.com.br" required><br>
-
-        <label for="senha">Senha:</label><br>
-        <input type="password" name="senha" id="senha" required><br>
-
-        <label for="idade">Idade</label><br>
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required><br>
+<br>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" placeholder="seuemail@exemplo.com.br" required><br>
+<br>
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required><br>
+<br>
+        <label for="idade">Idade:</label>
         <input type="number" name="idade" id="idade" min="18" max="99"><br>
-
-        <label for="data-nascimento">Data Nascimento</label><br>
+<br>
+        <label for="data-nascimento">Data Nascimento:</label>
         <input type="date" name="data-nascimento" id="data-nascimento"><br>
-
-        <label for="genero">Gênero</label><br>
+<br>
+        <label for="genero">Gênero:</label>
         <select name="genero" id="genero"> 
+            <option value="">
+                Selecione
+            </option>
             <option value="masculino">Masculino</option>
             <option value="feminino">Feminino</option>
             <option value="outro">Outro</option>
             <option value="prefiro_não_dizer">Prefiro não dizer</option>
         </select>
     </fieldset>
-
+<br>
     <fieldset>
-        <legend>Detalhes Adicionais</legend>
-        <label for="bio">Sobre você:</label><br>
-        <textarea name="bio" id="bio" rows="3" placeholder="Fale um Pouco de você...">
-        </textarea><br>
+        <legend>Informações profissionais</legend>
+        <label for="linguagem">Linguagem de programação favorita:</label>
+        <input type="text" name="Linguagem de programação favorita:" id="linguagem" min="10" max="50"><br>
+<br>
+        <label for="xp">Nível de conhecimento:</label>
+        <select name="xp" id="nivel"> 
+            <option value="">
+                Selecione
+            </option>
+            <option value="basico">Básico</option>
+            <option value="avançado">Avançado</option>
+            <option value="Experiente">Experiente</option>
+        </select><br>
+<br>
+        <label for="fale">Fale sobre sua experiência:</label><br>
+        <textarea name="fale" id="fale" rows="5" placeholder="Conte um pouco sobre sua experiência com tecnologia." required></textarea><br>
+    </fieldset>
+<br>
+    <fieldset>
+        <legend>Preferências de contato</legend>
+        <label for="hora-cadastro">Melhor horário para contato:</label>
+        <input type="time" id="hora-cadastro" name="hora-cadastro"><br>
+<br>
+        <label for="data-disponivel">Data disponível para iniciar um projeto:</label>
+        <input type="date" name="data-disponivel" id="data-disponivel"><br>
+    </fieldset>
 
-
-        <label for="linguagem">Linguagem Favorita:</label><br>
-        <input type="text" name="linguagem" id="linguagem" list="linguagens">
-        <datalist id="linguagens">
-            <option value="HTML">
-            <option value="CSS">
-            <option value="JavaScript">
-            <option value="Python">
-            <option value="Java">
-        </datalist><br>
-
-        <label for="contato">Contato</label>
-        <address>
-            Email: ananda.macario@edu.senai.br <br>
-            Telefone: (11) 97146 2673
-        </address><br>
-
-        <fieldset>
-
-
+<br>
         <fieldset>
             <details>
-            <legend>Outras informações</legend>
-            <summary>O que é um formulário HTML?</summary>
-            <p>Um formulário HTML é utilizado para coletar informações dos usuários e enviá-las para um servidor</p>
+            <legend>Informações adicionais</legend>
+            <summary>O que é a DevConnect?</summary>
+<br>
             </details>
 
-            <p>O campo <mark>Senha</mark> precisa ter pelo menos 6 caracteres</p>
-            <label for="hora-cadastro">Horário preferido para contato:</label>
-            <input type="time" id="hora-cadastro" name="hora-cadastro">
+            <p><mark>Atenção: confira seus dados antes de realizar o cadastro.</mark></p>
+            <p>Para dúvidas, entre em contato:</p>
+            <p>DevConnect <br>
+            E-mail: contato@devconnect.com.br <br>
+            Telefone: (11) 99999-9999</p>
+            <p>Data de abertura dos cadastros: 14 de agosto de 2026</p>
         </fieldset>
         <button type="submit">Cadastrar</button>
 
-        
-        
-        
 
     </form>
 
     </fieldset>
 
-    
-
-
-
-<!-- eduardo.falabella@docente.senai.br -->
 </body>
 </html>
